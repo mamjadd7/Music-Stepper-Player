@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    screen main title -->
+    <style name="main_title">
+        <item name="android:textColor">@color/titlecolor</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/_16ssp</item>
+        <item name="lineHeight">@dimen/_24sdp</item>
+        <item name="android:layout_marginTop">@dimen/_52sdp</item>
+    </style>
+
+
+<!--    editText design-->
+    <style name="edit_text">
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:inputType">textEmailAddress</item>
+        <item name="hintTextColor">@color/editTextHints</item>
+        <item name="fontFamily">@font/poppins_light</item>
+
+
+    </style>
+
+    <style name="button_top">
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="fontFamily">@font/poppins_extra_bold</item>
+
+
+    </style>
+
+
+
+</resources>

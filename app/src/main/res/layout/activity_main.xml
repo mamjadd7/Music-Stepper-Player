@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context="com.example.musicsteeeper.ui.MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.09" />
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to MusicStepper"
+            android:textAppearance="@style/main_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/guidelineTop" />
+
+        <ImageView
+            android:id="@+id/viewLogo"
+            android:layout_width="@dimen/_130sdp"
+            android:layout_height="@dimen/_104sdp"
+            android:layout_marginTop="@dimen/_33sdp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logo_img"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+            app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.09" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="39dp"
+            app:layout_constraintGuide_percent="0.9" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_47sdp"
+            android:layout_marginTop="@dimen/_42sdp"
+            android:background="@drawable/edit_text_bg"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="@dimen/_6sdp"
+            android:hint="Email address"
+            android:inputType="textEmailAddress"
+            android:paddingStart="@dimen/_12sdp"
+            android:textAppearance="@style/edit_text"
+            android:textColor="@color/white"
+            android:textColorHint="@color/editTextHints"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+            app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@+id/viewLogo" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_47sdp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edit_text_bg"
+            android:drawableStart="@drawable/ic_lock"
+            android:drawablePadding="@dimen/_6sdp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingStart="@dimen/_12sdp"
+            android:textAppearance="@style/edit_text"
+            android:textColor="@color/white"
+            android:textColorHint="@color/editTextHints"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
+
+        <ImageView
+            android:id="@+id/imageViewShowPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:src="@drawable/ic_visibility"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextPassword"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+            app:layout_constraintTop_toTopOf="@+id/editTextPassword" />
+
+
+        <TextView
+            android:id="@+id/textViewForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:fontFamily="@font/poppins_light"
+            android:text="Forgot Password"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
+
+        <TextView
+            android:id="@+id/buttonLogin"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_47sdp"
+            android:background="@drawable/top_botton"
+            android:text="Login"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:fontFamily="@font/poppins_black"
+            android:textAppearance="@style/edit_text"
+            android:textColorHint="@color/editTextHints"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+            app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@id/textViewForgotPassword" />
+
+
+        <TextView
+            android:id="@+id/textViewDontHaveAnAcc"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:fontFamily="@font/poppins_light"
+            android:text="Don't have an account"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+            app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@id/buttonLogin" />
+
+
+        <TextView
+            android:id="@+id/buttonSignUp"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_47sdp"
+            android:background="@drawable/bottom_button"
+            android:fontFamily="@font/poppins_black"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:text="Sign Up"
+            android:textAppearance="@style/edit_text"
+            android:textColor="@color/titlecolor"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+            app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewDontHaveAnAcc" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

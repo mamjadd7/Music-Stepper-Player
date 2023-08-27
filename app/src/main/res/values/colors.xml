@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+<!--    custom color-->
+    <color name="titlecolor">#FDD50D</color>
+    <color name="editTextIcon">#575758</color>
+    <color name="editTextInside">#0F0F11</color>
+    <color name="buttonInside">#0F0F11</color>
+    <color name="editTextHints">#B3FFFFFF</color>
+
+
+
+
+
+
+
+
+
+
+
+
+</resources>
