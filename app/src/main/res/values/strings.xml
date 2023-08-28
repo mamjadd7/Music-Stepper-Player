@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Music Steeeper</string>
     <string name="forgot_password">Forgot Password?</string>
+
+    <string name="choose_a_friend">Choose a friend who told you about this platform. They will earn every time you make a sale and every time you buy</string>
+    <string name="search_artist_albums_singer"><![CDATA[Search Artist, Albums & Singer]]></string>
 </resources>

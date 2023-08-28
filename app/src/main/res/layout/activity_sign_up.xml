@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context="com.example.musicsteeeper.ui.SignUpActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.09" />
+
+        <ImageView
+            android:id="@+id/viewLogo"
+            android:layout_width="@dimen/_130sdp"
+            android:layout_height="@dimen/_104sdp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logo_img"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+            app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+            app:layout_constraintTop_toTopOf="@+id/guidelineTop" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.09" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.9" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_47sdp"
+            android:layout_marginTop="@dimen/_22sdp"
+            android:background="@drawable/edit_text_bg"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="@dimen/_6sdp"
+            android:hint="Email address"
+            android:inputType="textEmailAddress"
+            android:paddingStart="@dimen/_12sdp"
+            android:textAppearance="@style/edit_text"
+            android:textColor="@color/white"
+            android:textColorHint="@color/editTextHints"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+            app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@+id/viewLogo" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_47sdp"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:background="@drawable/edit_text_bg"
+            android:drawableStart="@drawable/ic_lock"
+            android:drawablePadding="@dimen/_6sdp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingStart="@dimen/_12sdp"
+            android:textAppearance="@style/edit_text"
+            android:textColor="@color/white"
+            android:textColorHint="@color/editTextHints"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
+
+        <ImageView
+            android:id="@+id/imageViewShowPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:src="@drawable/ic_visibility"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextPassword"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+            app:layout_constraintTop_toTopOf="@+id/editTextPassword" />
+
+
+        <TextView
+            android:id="@+id/buttonSignUp"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_47sdp"
+            android:background="@drawable/top_botton"
+            android:fontFamily="@font/poppins_black"
+            android:gravity="center"
+            android:text="Sign Up"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:textAppearance="@style/edit_text"
+            android:textColorHint="@color/editTextHints"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+            app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
+
+
+        <TextView
+            android:id="@+id/buttonTutorial"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_47sdp"
+            android:background="@drawable/bottom_button"
+            android:fontFamily="@font/poppins_black"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:text="Tutorial"
+            android:textAppearance="@style/edit_text"
+            android:textColor="@color/titlecolor"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+            app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buttonSignUp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
