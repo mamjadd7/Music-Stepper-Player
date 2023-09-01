@@ -7,6 +7,10 @@ android {
     namespace = "com.musicsteeeper"
     compileSdk = 33
 
+    buildFeatures{
+        viewBinding= true;
+    }
+
     defaultConfig {
         applicationId = "com.musicsteeeper"
         minSdk = 21
@@ -37,7 +41,9 @@ dependencies {
 //    ssp and sdp dependencies
     implementation ("com.intuit.ssp:ssp-android:1.1.0")
     implementation ("com.intuit.sdp:sdp-android:1.1.0")
-
+    
+//    circular image
+    implementation ("de.hdodenhof:circleimageview:3.1.0")
 
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.appcompat:appcompat:1.6.1")

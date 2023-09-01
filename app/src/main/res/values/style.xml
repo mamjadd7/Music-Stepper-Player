@@ -24,9 +24,5 @@
         <item name="android:textSize">@dimen/_12ssp</item>
         <item name="fontFamily">@font/poppins_extra_bold</item>
 
-
     </style>
-
-
-
 </resources>

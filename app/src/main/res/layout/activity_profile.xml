@@ -4,7 +4,261 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context="com.example.musicsteeeper.ui.ProfileActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_272sdp"
+        android:background="@drawable/profile_screen_top_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="@dimen/_8sdp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:id="@+id/viewArrowBacklong"
+            android:layout_width="@dimen/_34sdp"
+            android:layout_height="@dimen/_34sdp"
+            android:layout_margin="@dimen/_14sdp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/ic_circle_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></View>
+
+        <ImageView
+            android:id="@+id/imageViewArrowBackLong"
+            android:layout_width="20dp"
+            android:layout_height="18dp"
+            android:src="@drawable/ic_arrow_back_long"
+            app:layout_constraintBottom_toBottomOf="@+id/viewArrowBacklong"
+            app:layout_constraintEnd_toEndOf="@+id/viewArrowBacklong"
+            app:layout_constraintStart_toStartOf="@+id/viewArrowBacklong"
+            app:layout_constraintTop_toTopOf="@+id/viewArrowBacklong" />
+
+        <View
+            android:id="@+id/viewEdit"
+            android:layout_width="@dimen/_34sdp"
+            android:layout_height="@dimen/_34sdp"
+            android:layout_margin="@dimen/_14sdp"
+            android:background="@drawable/ic_circle_back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewEdit"
+            android:layout_width="20dp"
+            android:layout_height="18dp"
+            android:src="@drawable/ic_pencil"
+            app:layout_constraintBottom_toBottomOf="@+id/viewEdit"
+            app:layout_constraintEnd_toEndOf="@+id/viewEdit"
+            app:layout_constraintStart_toStartOf="@+id/viewEdit"
+            app:layout_constraintTop_toTopOf="@+id/viewEdit" />
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/circularImageProfile"
+            android:layout_width="@dimen/_74sdp"
+            android:layout_height="@dimen/_74sdp"
+            android:layout_marginTop="@dimen/_38sdp"
+            android:src="@drawable/artist_one"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewSongTitle"
+            android:layout_width="@dimen/_74sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:fontFamily="@font/poppins_extra_bold"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:text="Song Title"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/circularImageProfile" />
+
+        <TextView
+            android:id="@+id/textViewSongArtistName"
+            android:layout_width="@dimen/_74sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="@color/artistName"
+            android:text="Arijit Sing"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewSongTitle" />
+
+        <TextView
+            android:id="@+id/textViewReviewText"
+            android:layout_width="@dimen/_74sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="@color/reviewClr"
+            android:text="Brilliant!"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewSongArtistName" />
+
+
+        <ImageView
+            android:id="@+id/imageViewReviewStar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:src="@drawable/star_img"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewReviewText" />
+
+
+        <TextView
+            android:id="@+id/textViewFavouriteArtist"
+            android:layout_width="@dimen/_74sdp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="3 Favorite Artist"
+            android:textSize="@dimen/_10ssp"
+            android:textColor="@color/reviewClr"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewReviewStar" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/editTextSearch"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_47sdp"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:background="@drawable/profile_search_bg"
+        android:drawableStart="@drawable/ic_search"
+        android:drawablePadding="@dimen/_6sdp"
+        android:hint="Search"
+        android:inputType="text"
+        android:paddingStart="@dimen/_12sdp"
+        android:textAppearance="@style/edit_text"
+        android:textColor="@color/white"
+        android:textColorHint="@color/editTextHints"
+        app:layout_constraintEnd_toStartOf="@+id/viewRefreshButton"
+        app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <View
+        android:id="@+id/viewRefreshButton"
+        android:layout_width="@dimen/_47sdp"
+        android:layout_height="@dimen/_47sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:background="@drawable/profile_search_refresh"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextSearch"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+        app:layout_constraintStart_toEndOf="@+id/editTextSearch"
+        app:layout_constraintTop_toTopOf="@+id/editTextSearch" />
+
+    <ImageView
+        android:id="@+id/editTextSearchButton"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:src="@drawable/ic_refresh_arrow"
+        app:layout_constraintBottom_toBottomOf="@+id/viewRefreshButton"
+        app:layout_constraintEnd_toEndOf="@+id/viewRefreshButton"
+        app:layout_constraintStart_toStartOf="@+id/viewRefreshButton"
+        app:layout_constraintTop_toTopOf="@+id/viewRefreshButton" />
+
+
+    <View
+        android:id="@+id/recRecentlyPlayed"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_52sdp"
+        android:layout_marginTop="@dimen/_24sdp"
+        android:background="@drawable/rec_corner_round"
+        app:layout_constraintCircleRadius="@dimen/_8sdp"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+        app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSearch" />
+
+    <TextView
+        android:id="@+id/textViewRecentlyPlayed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:background="@color/editTextInside"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Recently Played"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/recRecentlyPlayed"
+        app:layout_constraintTop_toTopOf="@+id/recRecentlyPlayed" />
+
+    <TextView
+        android:id="@+id/textViewSeeMoreRecentlyPlayed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:background="@color/editTextInside"
+        android:fontFamily="@font/poppins_medium"
+        android:text="See More"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+        app:layout_constraintTop_toTopOf="@+id/recRecentlyPlayed" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewRecentlyPlayed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+        app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRecentlyPlayed"
+        tools:listitem="@layout/recently_played_item" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.02" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.09" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+
+
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

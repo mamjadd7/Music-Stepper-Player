@@ -5,21 +5,28 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
 import com.musicsteeeper.R
+import com.musicsteeeper.databinding.ActivityMainBinding
+
 //done
 class MainActivity : AppCompatActivity() {
+
+    private val binding by lazy {
+        ActivityMainBinding.inflate(layoutInflater)
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(binding.root)
 
-        val logOut = findViewById<TextView>(R.id.buttonSignUp)
-        val login = findViewById<TextView>(R.id.buttonLogin)
 
-        login.setOnClickListener {
+
+
+
+        binding.buttonSignUp.setOnClickListener {
             startActivity(Intent(this, HomeExpandedActivity::class.java))
         }
 
 
-        logOut.setOnClickListener {
+        binding.buttonLogin.setOnClickListener {
             startActivity(Intent(this, SignUpActivity::class.java))
         }
     }

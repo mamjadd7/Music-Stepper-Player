@@ -19,7 +19,7 @@
             app:layout_constraintGuide_percent="0.09" />
 
         <ImageView
-            android:id="@+id/viewLogo"
+            android:id="@+id/imageViewLogo"
             android:layout_width="@dimen/_130sdp"
             android:layout_height="@dimen/_104sdp"
             android:scaleType="fitCenter"
@@ -58,7 +58,7 @@
             android:textColorHint="@color/editTextHints"
             app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
             app:layout_constraintStart_toStartOf="@+id/guidelineStart"
-            app:layout_constraintTop_toBottomOf="@+id/viewLogo" />
+            app:layout_constraintTop_toBottomOf="@+id/imageViewLogo" />
 
         <EditText
             android:id="@+id/editTextPassword"
@@ -110,16 +110,15 @@
             android:id="@+id/buttonTutorial"
             android:layout_width="0dp"
             android:layout_height="@dimen/_47sdp"
+            android:layout_marginTop="@dimen/_12sdp"
             android:background="@drawable/bottom_button"
             android:fontFamily="@font/poppins_black"
             android:gravity="center"
-            android:layout_marginTop="@dimen/_12sdp"
             android:text="Tutorial"
             android:textAppearance="@style/edit_text"
             android:textColor="@color/titlecolor"
             app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
             app:layout_constraintStart_toStartOf="@+id/guidelineStart"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@id/buttonSignUp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

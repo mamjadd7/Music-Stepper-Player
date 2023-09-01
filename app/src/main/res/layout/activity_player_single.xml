@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context="com.example.musicsteeeper.ui.PlayerSingleActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.09" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.09" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.9" />
+
+
+        <View
+            android:id="@+id/viewArrowBacklongPlayerSingle"
+            android:layout_width="@dimen/_34sdp"
+            android:layout_height="@dimen/_34sdp"
+            android:layout_margin="@dimen/_16sdp"
+            android:background="@drawable/ic_circle_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></View>
+
+        <ImageView
+            android:id="@+id/imageViewArrowBackLong"
+            android:layout_width="20dp"
+            android:layout_height="18dp"
+            android:src="@drawable/ic_arrow_back_long"
+            app:layout_constraintBottom_toBottomOf="@+id/viewArrowBacklongPlayerSingle"
+            app:layout_constraintEnd_toEndOf="@+id/viewArrowBacklongPlayerSingle"
+            app:layout_constraintStart_toStartOf="@+id/viewArrowBacklongPlayerSingle"
+            app:layout_constraintTop_toTopOf="@+id/viewArrowBacklongPlayerSingle" />
+
+
+        <TextView
+            android:id="@+id/textviewTitlePlayerSingle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_light"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="Music Player"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/viewArrowBacklongPlayerSingle"
+            app:layout_constraintEnd_toStartOf="@+id/viewMorePlayerSingle"
+            app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+            app:layout_constraintTop_toTopOf="@+id/viewArrowBacklongPlayerSingle" />
+
+        <View
+            android:id="@+id/viewMorePlayerSingle"
+            android:layout_width="@dimen/_34sdp"
+            android:layout_height="@dimen/_34sdp"
+            android:layout_margin="@dimen/_16sdp"
+            android:layout_marginEnd="41dp"
+            android:background="@drawable/ic_circle_back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></View>
+
+        <ImageView
+            android:id="@+id/imageViewMorePlayerSingle"
+            android:layout_width="24dp"
+            android:layout_height="13dp"
+            android:src="@drawable/ic_more_horiz"
+            app:layout_constraintBottom_toBottomOf="@+id/viewMorePlayerSingle"
+            app:layout_constraintEnd_toEndOf="@+id/viewMorePlayerSingle"
+            app:layout_constraintStart_toStartOf="@+id/viewMorePlayerSingle"
+            app:layout_constraintTop_toTopOf="@+id/viewMorePlayerSingle" />
+
+
+        <ImageView
+            android:id="@+id/imageViewSongImg"
+            android:layout_width="@dimen/_216sdp"
+            android:layout_height="@dimen/_247sdp"
+            android:layout_marginTop="@dimen/_34sdp"
+            android:background="@drawable/player_single_img_style"
+            android:src="@drawable/player_single_img"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+            app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@+id/textviewTitlePlayerSingle" />
+
+
+        <TextView
+            android:id="@+id/textViewPlaySingleTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:drawablePadding="@dimen/_8sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="Jodie roxx"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16ssp"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewSongImg"
+            app:layout_constraintStart_toStartOf="@+id/imageViewSongImg"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewSongImg" />
+
+        <TextView
+            android:id="@+id/textViewSongArtistName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="By Dodie"
+            android:textColor="@color/editTextHints"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintEnd_toEndOf="@+id/textViewPlaySingleTitle"
+            app:layout_constraintStart_toStartOf="@+id/textViewPlaySingleTitle"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPlaySingleTitle" />
+
+
+        <TextView
+            android:id="@+id/textViewSongSingle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="Single"
+            android:textColor="@color/editTextHints"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintEnd_toEndOf="@+id/textViewSongArtistName"
+            app:layout_constraintStart_toStartOf="@+id/textViewSongArtistName"
+            app:layout_constraintTop_toBottomOf="@+id/textViewSongArtistName" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutIc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@+id/textViewSongSingle"
+            app:layout_constraintStart_toStartOf="@+id/textViewSongSingle"
+            app:layout_constraintTop_toBottomOf="@id/textViewSongSingle">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/imgUser"
+                android:layout_width="@dimen/_28sdp"
+                android:layout_height="@dimen/_28sdp"
+                android:layout_margin="@dimen/_5sdp"
+                app:cardCornerRadius="@dimen/_100sdp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_account" />
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/imgPlayList"
+                android:layout_width="@dimen/_28sdp"
+                android:layout_height="@dimen/_28sdp"
+                android:layout_margin="@dimen/_5sdp"
+                app:cardCornerRadius="@dimen/_100sdp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_more_user" />
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/imgClock"
+                android:layout_width="@dimen/_28sdp"
+                android:layout_height="@dimen/_28sdp"
+                android:layout_margin="@dimen/_5sdp"
+                app:cardCornerRadius="@dimen/_100sdp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_clock" />
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/imgMoreVert"
+                android:layout_width="@dimen/_28sdp"
+                android:layout_height="@dimen/_28sdp"
+                android:layout_margin="@dimen/_5sdp"
+                app:cardCornerRadius="@dimen/_100sdp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_more_vert" />
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:background="@drawable/corner"
+    android:layout_marginEnd="@dimen/_8sdp"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewRecentlyOne"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_140sdp"
+        android:backgroundTint="@color/editTextInside"
+        app:cardCornerRadius="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/recently_img_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/recently_played_one_img"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/recently_title_one"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/poppins_black"
+                android:maxLines="1"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:text="Thinking Out Loud"
+                android:textColor="@color/white"
+                android:layout_marginStart="@dimen/_11sdp"
+                app:layout_constraintEnd_toEndOf="@+id/recently_img_one"
+                app:layout_constraintStart_toStartOf="@+id/recently_img_one"
+                app:layout_constraintTop_toBottomOf="@+id/recently_img_one" />
+
+            <TextView
+                android:id="@+id/recently_artist_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_light"
+                android:maxLines="1"
+                android:text="By Ed Sheeran"
+                android:textColor="@color/editTextHints"
+                app:layout_constraintEnd_toEndOf="@+id/recently_title_one"
+                app:layout_constraintStart_toStartOf="@+id/recently_title_one"
+                app:layout_constraintTop_toBottomOf="@+id/recently_title_one" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:id="@+id/cardViewRecentlyTwo"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="@dimen/_140sdp"-->
+
+<!--        android:backgroundTint="@color/editTextInside"-->
+<!--        app:cardCornerRadius="@dimen/_8sdp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.5"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/cardViewRecentlyOne"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/recently_img_Two"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/recently_played_two_img"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/recently_title_two"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center_horizontal"-->
+<!--                android:fontFamily="@font/poppins_black"-->
+<!--                android:maxLines="1"-->
+<!--                android:text="Runtz / Oh My"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:layout_marginStart="@dimen/_11sdp"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/recently_img_Two"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/recently_img_Two"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/recently_img_Two" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/recently_artist_name_two"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:fontFamily="@font/poppins_light"-->
+<!--                android:maxLines="1"-->
+<!--                android:text="By Kwengface"-->
+<!--                android:textColor="@color/editTextHints"-->
+<!--                android:layout_marginStart="@dimen/_11sdp"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/recently_img_Two"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/recently_img_Two"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/recently_title_two" />-->
+
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--    </androidx.cardview.widget.CardView>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

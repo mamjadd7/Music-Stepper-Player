@@ -1,9 +1,214 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context="com.example.musicsteeeper.ui.EditProfileActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.09" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+        <View
+            android:id="@+id/viewArrowBacklong"
+            android:layout_width="@dimen/_34sdp"
+            android:layout_height="@dimen/_34sdp"
+            android:layout_margin="@dimen/_16sdp"
+            android:background="@drawable/ic_circle_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></View>
+
+    <ImageView
+        android:id="@+id/imageViewArrowBackLong"
+        android:layout_width="20dp"
+        android:layout_height="18dp"
+        android:src="@drawable/ic_arrow_back_long"
+        app:layout_constraintBottom_toBottomOf="@+id/viewArrowBacklong"
+        app:layout_constraintEnd_toEndOf="@+id/viewArrowBacklong"
+        app:layout_constraintStart_toStartOf="@+id/viewArrowBacklong"
+        app:layout_constraintTop_toTopOf="@+id/viewArrowBacklong" />
+
+
+    <TextView
+        android:id="@+id/textviewTitleCreateProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_light"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="Create Profile"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewArrowBacklong"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+        app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+        app:layout_constraintTop_toTopOf="@+id/viewArrowBacklong" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circularImageEditProfile"
+        android:layout_width="@dimen/_74sdp"
+        android:layout_height="@dimen/_74sdp"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:src="@drawable/artist_one"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+        app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@+id/textviewTitleCreateProfile" />
+
+
+    <TextView
+        android:id="@+id/textViewSongTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:drawableEnd="@drawable/ic_pencil"
+        android:drawablePadding="@dimen/_8sdp"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="Jodie roxx"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+        app:layout_constraintStart_toEndOf="@+id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@+id/circularImageEditProfile" />
+
+    <TextView
+        android:id="@+id/textViewSongArtistName"
+        android:layout_width="@dimen/_74sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="Arijit Sing"
+        android:textColor="@color/editTextHints"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSongTitle" />
+
+
+    <TextView
+        android:id="@+id/textViewReviewText"
+        android:layout_width="@dimen/_74sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="Brilliant!"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSongArtistName" />
+
+
+        <TextView
+            android:id="@+id/textViewArtistDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="Artist Description"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp"
+            android:layout_marginTop="@dimen/_50sdp"
+            app:layout_constraintStart_toEndOf="@+id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@+id/textViewReviewText" />
+
+    <TextView
+        android:id="@+id/describe_yo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_light"
+        android:gravity="top"
+        android:text="Describe yourself in One Word"
+        android:textColor="@color/editTextHints"
+        android:textSize="@dimen/_8sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewArtistDesc"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+        app:layout_constraintStart_toEndOf="@+id/textViewArtistDesc"
+        app:layout_constraintTop_toTopOf="@+id/textViewArtistDesc" />
+
+
+    <EditText
+        android:id="@+id/editTextArtistDesc"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_47sdp"
+        android:background="@drawable/edit_profile_et_bg"
+        android:inputType="text"
+        android:paddingStart="@dimen/_12sdp"
+        android:textAppearance="@style/edit_text"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textColorHint="@color/editTextHints"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+        app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@+id/textViewArtistDesc" />
+
+
+        <TextView
+            android:id="@+id/textViewArtistFavorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:maxLines="1"
+            android:layout_marginTop="@dimen/_26sdp"
+            android:text="Favourite Artist's"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintStart_toEndOf="@+id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@+id/editTextArtistDesc" />
+
+
+        <EditText
+            android:id="@+id/editTextfavouriteArtist"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_47sdp"
+            android:background="@drawable/edit_profile_et_bg"
+            android:inputType="text"
+            android:paddingStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:textAppearance="@style/edit_text"
+            android:textColor="@color/white"
+            android:textColorHint="@color/editTextHints"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+            app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@id/textViewArtistFavorite" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_cross"
+            android:layout_marginEnd="@dimen/_8sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/editTextfavouriteArtist"
+            app:layout_constraintTop_toTopOf="@+id/editTextfavouriteArtist" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
