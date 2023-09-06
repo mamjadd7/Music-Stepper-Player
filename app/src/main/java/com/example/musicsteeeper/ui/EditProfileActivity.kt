@@ -13,8 +13,8 @@ class EditProfileActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-
-
+//        pl3ease wait just 2 mint ok
+        // yar circular imagevuiew k lye dependency nahi use karo  custom bnao
         binding.circularImageEditProfile.setOnClickListener {
             startActivity(Intent(this, PlayerSingleActivity::class.java))
         }

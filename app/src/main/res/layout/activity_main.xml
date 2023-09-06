@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
+    android:fillViewport="true"
     tools:context="com.example.musicsteeeper.ui.MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -24,10 +25,11 @@
             android:layout_height="wrap_content"
             android:text="Welcome to MusicStepper"
             android:textAppearance="@style/main_title"
+            app:layout_constraintBottom_toTopOf="@+id/imageViewLogo"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/guidelineTop" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/imageViewLogo"
@@ -36,7 +38,9 @@
             android:layout_marginTop="@dimen/_33sdp"
             android:scaleType="fitCenter"
             android:src="@drawable/logo_img"
+            app:layout_constraintBottom_toTopOf="@+id/editTextEmail"
             app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="@+id/guidelineStart"
             app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
 
@@ -58,37 +62,43 @@
         <EditText
             android:id="@+id/editTextEmail"
             android:layout_width="0dp"
-            android:layout_height="@dimen/_47sdp"
+            android:layout_height="@dimen/_45sdp"
             android:layout_marginTop="@dimen/_42sdp"
             android:background="@drawable/edit_text_bg"
             android:drawableStart="@drawable/ic_email"
             android:drawablePadding="@dimen/_6sdp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
             android:hint="Email address"
             android:inputType="textEmailAddress"
             android:paddingStart="@dimen/_12sdp"
             android:textAppearance="@style/edit_text"
             android:textColor="@color/white"
             android:textColorHint="@color/editTextHints"
+            app:layout_constraintBottom_toTopOf="@+id/editTextPassword"
             app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="@+id/guidelineStart"
             app:layout_constraintTop_toBottomOf="@+id/imageViewLogo" />
 
         <EditText
             android:id="@+id/editTextPassword"
             android:layout_width="0dp"
-            android:layout_height="@dimen/_47sdp"
-            android:layout_marginTop="16dp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_14sdp"
             android:background="@drawable/edit_text_bg"
             android:drawableStart="@drawable/ic_lock"
             android:drawablePadding="@dimen/_6sdp"
+            android:focusable="true"
             android:hint="Password"
             android:inputType="textPassword"
             android:paddingStart="@dimen/_12sdp"
             android:textAppearance="@style/edit_text"
             android:textColor="@color/white"
             android:textColorHint="@color/editTextHints"
+            app:layout_constraintBottom_toTopOf="@+id/textViewForgotPassword"
             app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="@+id/guidelineStart"
             app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
 
@@ -111,6 +121,7 @@
             android:fontFamily="@font/poppins_light"
             android:text="Forgot Password"
             android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/buttonLogin"
             app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
             app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
 
@@ -118,16 +129,18 @@
             android:id="@+id/buttonLogin"
             android:layout_width="0dp"
             android:layout_height="@dimen/_47sdp"
-            android:background="@drawable/top_botton"
-            android:text="Login"
-            android:gravity="center"
             android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/top_botton"
             android:fontFamily="@font/poppins_black"
+            android:gravity="center"
+            android:text="Login"
             android:textAppearance="@style/edit_text"
             android:textColorHint="@color/editTextHints"
+            app:layout_constraintBottom_toTopOf="@+id/textViewDontHaveAnAcc"
             app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="@+id/guidelineStart"
-            app:layout_constraintTop_toBottomOf="@id/textViewForgotPassword" />
+            app:layout_constraintTop_toBottomOf="@+id/textViewForgotPassword" />
 
 
         <TextView
@@ -138,26 +151,28 @@
             android:fontFamily="@font/poppins_light"
             android:text="Don't have an account"
             android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/buttonSignUp"
             app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="@+id/guidelineStart"
-            app:layout_constraintTop_toBottomOf="@id/buttonLogin" />
+            app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />
 
 
         <TextView
             android:id="@+id/buttonSignUp"
             android:layout_width="0dp"
             android:layout_height="@dimen/_47sdp"
+            android:layout_marginTop="@dimen/_12sdp"
             android:background="@drawable/bottom_button"
             android:fontFamily="@font/poppins_black"
             android:gravity="center"
-            android:layout_marginTop="@dimen/_12sdp"
             android:text="Sign Up"
             android:textAppearance="@style/edit_text"
             android:textColor="@color/titlecolor"
             app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="@+id/guidelineStart"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/textViewDontHaveAnAcc" />
+            app:layout_constraintTop_toBottomOf="@+id/textViewDontHaveAnAcc" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
