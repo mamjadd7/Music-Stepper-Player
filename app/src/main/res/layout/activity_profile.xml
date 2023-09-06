@@ -3,265 +3,263 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_height="match_parent"
     android:layout_width="match_parent"
-    android:fillViewport="true"
+    android:layout_height="match_parent"
     android:background="@color/black"
+    android:fillViewport="true"
     tools:context="com.example.musicsteeeper.ui.ProfileActivity">
 
-<androidx.constraintlayout.widget.ConstraintLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
-
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout"
-        android:layout_width="0dp"
-        android:layout_height="@dimen/_272sdp"
-        android:layout_margin="@dimen/_8sdp"
-        android:background="@drawable/profile_screen_top_back"
-        app:layout_constraintBottom_toTopOf="@+id/editTextSearch"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/viewArrowBacklong"
-            android:layout_width="@dimen/_34sdp"
-            android:layout_height="@dimen/_34sdp"
-            android:layout_margin="@dimen/_14sdp"
-            android:backgroundTint="@color/black"
-            app:cardCornerRadius="@dimen/_100sdp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-
-            <ImageView
-                android:id="@+id/imageViewArrowBackLong"
-                android:layout_width="20dp"
-                android:layout_height="18dp"
-                android:layout_gravity="center"
-                android:src="@drawable/ic_arrow_back_long" />
-        </androidx.cardview.widget.CardView>
-
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/viewEdit"
-            android:layout_width="@dimen/_34sdp"
-            android:layout_height="@dimen/_34sdp"
-            android:layout_margin="@dimen/_14sdp"
-            android:backgroundTint="@color/black"
-            app:cardCornerRadius="@dimen/_100sdp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <ImageView
-                android:id="@+id/imageViewEdit"
-                android:layout_width="20dp"
-                android:layout_height="18dp"
-                android:layout_gravity="center"
-                android:src="@drawable/ic_pencil" />
-
-        </androidx.cardview.widget.CardView>
-
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardViewEditImg"
-            android:layout_width="@dimen/_74sdp"
-            android:layout_height="@dimen/_74sdp"
-            android:layout_margin="@dimen/_38sdp"
-            android:layout_marginTop="16dp"
-            android:backgroundTint="@color/black"
-            app:cardCornerRadius="@dimen/_100sdp"
-            app:civ_border_color="#FF000000"
-            app:civ_border_width="2dp"
-            app:layout_constraintBottom_toTopOf="@+id/textViewSongTitle"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_272sdp"
+            android:layout_margin="@dimen/_8sdp"
+            android:background="@drawable/profile_screen_top_back"
+            app:layout_constraintBottom_toTopOf="@+id/editTextSearch"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <ImageView
-                android:id="@+id/imageVeiwEditImg"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"
-                android:src="@drawable/artist_one" />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/viewArrowBacklong"
+                android:layout_width="@dimen/_34sdp"
+                android:layout_height="@dimen/_34sdp"
+                android:layout_margin="@dimen/_14sdp"
+                android:backgroundTint="@color/black"
+                app:cardCornerRadius="@dimen/_100sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
+
+                <ImageView
+                    android:id="@+id/imageViewArrowBackLong"
+                    android:layout_width="20dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_arrow_back_long" />
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/viewEdit"
+                android:layout_width="@dimen/_34sdp"
+                android:layout_height="@dimen/_34sdp"
+                android:layout_margin="@dimen/_14sdp"
+                android:backgroundTint="@color/black"
+                app:cardCornerRadius="@dimen/_100sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageViewEdit"
+                    android:layout_width="20dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_pencil" />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewEditImg"
+                android:layout_width="@dimen/_74sdp"
+                android:layout_height="@dimen/_74sdp"
+                android:layout_marginTop="@dimen/_38sdp"
+                android:layout_marginBottom="@dimen/_38sdp"
+                android:backgroundTint="@color/black"
+                app:cardCornerRadius="@dimen/_100sdp"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp"
+                app:layout_constraintBottom_toTopOf="@+id/textViewSongTitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageVeiwEditImg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/artist_one" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textViewSongTitle"
+                android:layout_width="@dimen/_74sdp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_extra_bold"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="Song Title"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintBottom_toTopOf="@+id/textViewSongArtistName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardViewEditImg" />
+
+            <TextView
+                android:id="@+id/textViewSongArtistName"
+                android:layout_width="@dimen/_74sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="Arijit Sing"
+                android:textColor="@color/artistName"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintBottom_toTopOf="@+id/textViewReviewText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewSongTitle" />
+
+            <TextView
+                android:id="@+id/textViewReviewText"
+                android:layout_width="@dimen/_74sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="Brilliant!"
+                android:textColor="@color/reviewClr"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewSongArtistName" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <EditText
+            android:id="@+id/editTextSearch"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:background="@drawable/profile_search_bg"
+            android:drawableStart="@drawable/ic_search"
+            android:drawablePadding="@dimen/_6sdp"
+            android:hint="Search"
+            android:inputType="text"
+            android:paddingStart="@dimen/_12sdp"
+            android:textAppearance="@style/edit_text"
+            android:textColor="@color/white"
+            android:textColorHint="@color/editTextHints"
+            app:layout_constraintBottom_toTopOf="@+id/recRecentlyPlayed"
+            app:layout_constraintEnd_toStartOf="@+id/viewRefreshButton"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/viewRefreshButton"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:backgroundTint="@color/editTextInside"
+            android:foreground="@drawable/card_view_border"
+            app:cardCornerRadius="@dimen/_100sdp"
+            app:cardElevation="@dimen/_4sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextSearch"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/editTextSearch"
+            app:layout_constraintTop_toTopOf="@+id/editTextSearch">
+
+            <ImageView
+                android:id="@+id/editTextSearchButton"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_refresh_arrow" />
 
         </androidx.cardview.widget.CardView>
 
+        <View
+            android:id="@+id/recRecentlyPlayed"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_52sdp"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:background="@drawable/rec_corner_round"
+            app:layout_constraintCircleRadius="@dimen/_8sdp"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@+id/editTextSearch" />
+
         <TextView
-            android:id="@+id/textViewSongTitle"
-            android:layout_width="@dimen/_74sdp"
+            android:id="@+id/textViewRecentlyPlayed"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins_extra_bold"
-            android:gravity="center"
-            android:maxLines="1"
-            android:text="Song Title"
-            android:textColor="@color/black"
-            android:textSize="@dimen/_12ssp"
-            app:layout_constraintBottom_toTopOf="@+id/textViewSongArtistName"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/cardViewEditImg" />
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@color/editTextInside"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Recently Played"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/recRecentlyPlayed"
+            app:layout_constraintTop_toTopOf="@+id/recRecentlyPlayed" />
 
         <TextView
-            android:id="@+id/textViewSongArtistName"
-            android:layout_width="@dimen/_74sdp"
+            android:id="@+id/textViewSeeMoreRecentlyPlayed"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_8sdp"
-            android:fontFamily="@font/poppins_medium"
-            android:gravity="center"
-            android:maxLines="1"
-            android:text="Arijit Sing"
-            android:textColor="@color/artistName"
-            android:textSize="@dimen/_10ssp"
-            app:layout_constraintBottom_toTopOf="@+id/textViewReviewText"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textViewSongTitle" />
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:background="@color/editTextInside"
+            android:fontFamily="@font/poppins_light"
+            android:text="See More"
+            android:textColor="@color/editTextHints"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+            app:layout_constraintTop_toTopOf="@+id/recRecentlyPlayed" />
 
-        <TextView
-            android:id="@+id/textViewReviewText"
-            android:layout_width="@dimen/_74sdp"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewRecentlyPlayed"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_8sdp"
-            android:fontFamily="@font/poppins_medium"
-            android:gravity="center"
-            android:maxLines="1"
-            android:text="Brilliant!"
-            android:textColor="@color/reviewClr"
-            android:textSize="@dimen/_10ssp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textViewSongArtistName" />
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+            app:layout_constraintStart_toEndOf="@id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@+id/textViewRecentlyPlayed"
+            tools:listitem="@layout/recently_played_item" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.02" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.06" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.94" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <EditText
-        android:id="@+id/editTextSearch"
-        android:layout_width="@dimen/_200sdp"
-        android:layout_height="@dimen/_40sdp"
-        android:layout_marginTop="@dimen/_18sdp"
-        android:layout_marginEnd="@dimen/_8sdp"
-        android:background="@drawable/profile_search_bg"
-        android:drawableStart="@drawable/ic_search"
-        android:drawablePadding="@dimen/_6sdp"
-        android:hint="Search"
-        android:inputType="text"
-        android:paddingStart="@dimen/_12sdp"
-        android:textAppearance="@style/edit_text"
-        android:textColor="@color/white"
-        android:textColorHint="@color/editTextHints"
-        app:layout_constraintBottom_toTopOf="@+id/recRecentlyPlayed"
-        app:layout_constraintEnd_toStartOf="@+id/viewRefreshButton"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/guidelineStart"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/viewRefreshButton"
-        android:layout_width="@dimen/_40sdp"
-        android:layout_height="@dimen/_40sdp"
-        android:layout_marginStart="@dimen/_8sdp"
-        android:backgroundTint="@color/editTextInside"
-        android:foreground="@drawable/card_view_border"
-        app:cardCornerRadius="@dimen/_100sdp"
-        app:cardElevation="@dimen/_4sdp"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextSearch"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
-        app:layout_constraintStart_toEndOf="@+id/editTextSearch"
-        app:layout_constraintTop_toTopOf="@+id/editTextSearch">
-
-        <ImageView
-            android:id="@+id/editTextSearchButton"
-            android:layout_width="@dimen/_20sdp"
-            android:layout_height="@dimen/_20sdp"
-            android:layout_gravity="center"
-            android:src="@drawable/ic_refresh_arrow" />
-
-    </androidx.cardview.widget.CardView>
-
-    <View
-        android:id="@+id/recRecentlyPlayed"
-        android:layout_width="0dp"
-        android:layout_height="@dimen/_52sdp"
-        android:layout_marginTop="@dimen/_24sdp"
-        android:background="@drawable/rec_corner_round"
-        app:layout_constraintCircleRadius="@dimen/_8sdp"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/guidelineStart"
-        app:layout_constraintTop_toBottomOf="@+id/editTextSearch" />
-
-    <TextView
-        android:id="@+id/textViewRecentlyPlayed"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/_8sdp"
-        android:layout_marginTop="@dimen/_8sdp"
-        android:background="@color/editTextInside"
-        android:fontFamily="@font/poppins_medium"
-        android:text="Recently Played"
-        android:textColor="@color/white"
-        app:layout_constraintStart_toStartOf="@+id/recRecentlyPlayed"
-        app:layout_constraintTop_toTopOf="@+id/recRecentlyPlayed" />
-
-    <TextView
-        android:id="@+id/textViewSeeMoreRecentlyPlayed"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_8sdp"
-        android:layout_marginEnd="@dimen/_8sdp"
-        android:background="@color/editTextInside"
-        android:fontFamily="@font/poppins_light"
-        android:text="See More"
-        android:textColor="@color/editTextHints"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
-        app:layout_constraintTop_toTopOf="@+id/recRecentlyPlayed" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerViewRecentlyPlayed"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:orientation="horizontal"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
-        app:layout_constraintStart_toEndOf="@id/guidelineStart"
-        app:layout_constraintTop_toBottomOf="@+id/textViewRecentlyPlayed"
-        tools:listitem="@layout/recently_played_item" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guidelineTop"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.02" />
-
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guidelineStart"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.09" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guidelineEnd"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.9" />
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
-
 
 
 </ScrollView>

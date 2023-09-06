@@ -17,7 +17,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.09" />
+            app:layout_constraintGuide_percent="0.04" />
 
         <ImageView
             android:id="@+id/imageViewLogo"
@@ -45,21 +45,21 @@
 
         <EditText
 
-            android:focusable="true"
             android:id="@+id/editTextEmail"
             android:layout_width="0dp"
-            android:layout_height="@dimen/_47sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_30sdp"
             android:background="@drawable/edit_text_bg"
             android:drawableStart="@drawable/ic_email"
             android:drawablePadding="@dimen/_6sdp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
             android:hint="Email address"
             android:inputType="textEmailAddress"
             android:paddingStart="@dimen/_12sdp"
             android:textAppearance="@style/edit_text"
             android:textColor="@color/white"
-            android:layout_marginTop="@dimen/_14sdp"
             android:textColorHint="@color/editTextHints"
-            android:focusableInTouchMode="true"
             app:layout_constraintBottom_toTopOf="@+id/editTextPassword"
             app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
             app:layout_constraintHorizontal_bias="0.0"
@@ -68,14 +68,14 @@
 
         <EditText
             android:id="@+id/editTextPassword"
-            android:focusable="true"
             android:layout_width="0dp"
             android:layout_height="@dimen/_45sdp"
-            android:focusableInTouchMode="true"
+            android:layout_marginTop="@dimen/_14sdp"
             android:background="@drawable/edit_text_bg"
             android:drawableStart="@drawable/ic_lock"
             android:drawablePadding="@dimen/_6sdp"
-            android:layout_marginTop="@dimen/_14sdp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
             android:hint="Password"
             android:inputType="textPassword"
             android:paddingStart="@dimen/_12sdp"
@@ -103,12 +103,12 @@
             android:id="@+id/buttonSignUp"
             android:layout_width="0dp"
             android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_24sdp"
             android:background="@drawable/top_botton"
             android:fontFamily="@font/poppins_black"
             android:gravity="center"
             android:text="Sign Up"
             android:textAppearance="@style/edit_text"
-            android:layout_marginTop="@dimen/_14sdp"
             android:textColorHint="@color/editTextHints"
             app:layout_constraintBottom_toTopOf="@+id/buttonTutorial"
             app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
@@ -120,7 +120,7 @@
         <TextView
             android:id="@+id/buttonTutorial"
             android:layout_width="0dp"
-            android:layout_height="@dimen/_47sdp"
+            android:layout_height="@dimen/_45sdp"
             android:layout_marginTop="@dimen/_14sdp"
             android:background="@drawable/bottom_button"
             android:fontFamily="@font/poppins_black"
