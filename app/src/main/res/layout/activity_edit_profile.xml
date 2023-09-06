@@ -26,25 +26,25 @@
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.9" />
 
-        <View
+        <androidx.cardview.widget.CardView
             android:id="@+id/viewArrowBacklong"
             android:layout_width="@dimen/_34sdp"
             android:layout_height="@dimen/_34sdp"
             android:layout_margin="@dimen/_16sdp"
-            android:background="@drawable/ic_circle_back"
+            android:backgroundTint="@color/editTextInside"
+            app:cardCornerRadius="@dimen/_100sdp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"></View>
+            app:layout_constraintTop_toTopOf="parent">
+
 
     <ImageView
         android:id="@+id/imageViewArrowBackLong"
         android:layout_width="20dp"
         android:layout_height="18dp"
         android:src="@drawable/ic_arrow_back_long"
-        app:layout_constraintBottom_toBottomOf="@+id/viewArrowBacklong"
-        app:layout_constraintEnd_toEndOf="@+id/viewArrowBacklong"
-        app:layout_constraintStart_toStartOf="@+id/viewArrowBacklong"
-        app:layout_constraintTop_toTopOf="@+id/viewArrowBacklong" />
+        android:layout_gravity="center"/>
 
+        </androidx.cardview.widget.CardView>
 
     <TextView
         android:id="@+id/textviewTitleCreateProfile"
@@ -155,7 +155,7 @@
     <EditText
         android:id="@+id/editTextArtistDesc"
         android:layout_width="0dp"
-        android:layout_height="@dimen/_47sdp"
+        android:layout_height="@dimen/_40sdp"
         android:background="@drawable/edit_profile_et_bg"
         android:inputType="text"
         android:paddingStart="@dimen/_12sdp"
@@ -186,7 +186,7 @@
         <EditText
             android:id="@+id/editTextfavouriteArtist"
             android:layout_width="0dp"
-            android:layout_height="@dimen/_47sdp"
+            android:layout_height="@dimen/_40sdp"
             android:background="@drawable/edit_profile_et_bg"
             android:inputType="text"
             android:paddingStart="@dimen/_12sdp"
@@ -201,9 +201,9 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_cross"
             android:layout_marginEnd="@dimen/_8sdp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:src="@drawable/ic_cross"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextfavouriteArtist"
             app:layout_constraintEnd_toEndOf="@+id/editTextfavouriteArtist"
             app:layout_constraintTop_toTopOf="@+id/editTextfavouriteArtist" />
 
